@@ -6,6 +6,7 @@ import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import part1.Client.serviceCenter.ZkWatcher.watchZK;
 import part1.Client.cache.serviceCache;
+import part1.Client.serviceCenter.balance.LoadBalance;
 import part1.Client.serviceCenter.balance.impl.ConsistencyHashBalance;
 
 import java.net.InetSocketAddress;
@@ -56,7 +57,9 @@ public class ZKServiceCenter implements ServiceCenter{
                 addressList=client.getChildren().forPath("/" + serviceName);
             }
             // 负载均衡得到地址
-            String address = new ConsistencyHashBalance().balance(addressList);
+            LoadBalance loadBalance = new ConsistencyHashBalance();
+            // 获取负载均衡后的地址
+            String address = loadBalance.balance(addressList);
             return parseAddress(address);
         } catch (Exception e) {
             e.printStackTrace();

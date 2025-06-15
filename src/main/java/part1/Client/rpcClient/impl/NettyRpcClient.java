@@ -34,7 +34,8 @@ public class NettyRpcClient implements RpcClient {
     static {
         eventLoopGroup = new NioEventLoopGroup();
         bootstrap = new Bootstrap();
-        bootstrap.group(eventLoopGroup).channel(NioSocketChannel.class)
+        bootstrap.group(eventLoopGroup).
+                channel(NioSocketChannel.class)
                 .handler(new NettyClientInitializer());
     }
     @Override
