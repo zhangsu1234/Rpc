@@ -10,11 +10,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/2/12 11:37
- */
+
 @AllArgsConstructor
 public class SimpleRPCRPCServer implements RpcServer {
     private ServiceProvider serviceProvide;

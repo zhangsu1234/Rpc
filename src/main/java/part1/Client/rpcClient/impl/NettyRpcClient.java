@@ -15,11 +15,7 @@ import part1.Client.serviceCenter.ServiceCenter;
 
 import java.net.InetSocketAddress;
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/5/2 19:40
- */
+
 public class NettyRpcClient implements RpcClient {
 
     private static final Bootstrap bootstrap;

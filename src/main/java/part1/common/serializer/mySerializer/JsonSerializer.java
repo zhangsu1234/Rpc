@@ -5,11 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import part1.common.Message.RpcRequest;
 import part1.common.Message.RpcResponse;
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/6/2 22:31
- */
+
 public class JsonSerializer implements Serializer {
     @Override
     public byte[] serialize(Object obj) {

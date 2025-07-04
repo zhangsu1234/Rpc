@@ -9,11 +9,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/5/2 18:58
- */
+
 public class SimpleSocketRpcCilent implements RpcClient {
     private String host;
     private int port;

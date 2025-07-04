@@ -9,7 +9,6 @@ import java.util.Map;
 
 public class RateLimitProvider {
     private Map<String, RateLimit> rateLimitMap=new HashMap<>();
-
     public RateLimit getRateLimit(String interfaceName){
         if(!rateLimitMap.containsKey(interfaceName)){
             RateLimit rateLimit=new TokenBucketRateLimitImpl(100,10);

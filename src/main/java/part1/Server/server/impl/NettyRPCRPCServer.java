@@ -9,11 +9,7 @@ import part1.Server.netty.nettyInitializer.NettyServerInitializer;
 import part1.Server.provider.ServiceProvider;
 import part1.Server.server.RpcServer;
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/2/26 14:01
- */
+
 @AllArgsConstructor
 public class NettyRPCRPCServer implements RpcServer {
     private ServiceProvider serviceProvider;

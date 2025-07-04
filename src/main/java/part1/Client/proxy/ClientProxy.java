@@ -15,11 +15,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/2/6 16:49
- */
+
 public class ClientProxy implements InvocationHandler {
     //传入参数service接口的class对象，反射封装成一个request
 

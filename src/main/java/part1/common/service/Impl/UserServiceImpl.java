@@ -7,11 +7,7 @@ import part1.common.service.UserService;
 import java.util.Random;
 import java.util.UUID;
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/1/28 16:28
- */
+
 public class UserServiceImpl implements UserService {
     @Override
     public User getUserByUserId(Integer id) {

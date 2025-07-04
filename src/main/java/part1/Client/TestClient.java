@@ -6,11 +6,6 @@ import part1.common.pojo.User;
 import part1.common.service.UserService;
 
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/2/6 18:39
- */
 
 public class TestClient {
     public static void main(String[] args) throws InterruptedException {

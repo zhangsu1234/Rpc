@@ -12,11 +12,7 @@ import part1.Client.serviceCenter.balance.impl.ConsistencyHashBalance;
 import java.net.InetSocketAddress;
 import java.util.List;
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/5/3 21:41
- */
+
 public class ZKServiceCenter implements ServiceCenter{
     // curator 提供的zookeeper客户端
     private CuratorFramework client;

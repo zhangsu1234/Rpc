@@ -5,12 +5,7 @@ import part1.Client.serviceCenter.balance.LoadBalance;
 import java.util.List;
 import java.util.Random;
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/6/19 21:20
- * 随机 负载均衡
- */
+
 public class RandomLoadBalance implements LoadBalance {
     @Override
     public String balance(List<String> addressList) {

@@ -8,11 +8,7 @@ import org.apache.zookeeper.CreateMode;
 import part1.Server.serviceRegister.ServiceRegister;
 
 import java.net.InetSocketAddress;
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/5/3 17:28
- */
+
 public class ZKServiceRegister implements ServiceRegister {
     // curator 提供的zookeeper客户端
     private CuratorFramework client;

@@ -6,11 +6,6 @@ import org.apache.curator.framework.recipes.cache.CuratorCache;
 import org.apache.curator.framework.recipes.cache.CuratorCacheListener;
 import part1.Client.cache.serviceCache;
 
-/**
- * @author wxx
- * @version 1.0
- * @create 2024/6/4 1:00
- */
 public class watchZK {
     // curator 提供的zookeeper客户端
     private CuratorFramework client;
